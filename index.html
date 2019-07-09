@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Angular Material</title>
+	<link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="node_modules/angular/angular.js"></script>
+	<!-- angular material depends on there below -->
+	<script src="node_modules/angular-animate/angular-animate.js"></script>
+	<script src="node_modules/angular-aria/angular-aria.js"></script>
+	<script src="node_modules/angular-messages/angular-messages.js"></script>
+	<script src="node_modules/angular-material/angular-material.js"></script>
+</head>
+
+
+<body ng-app="materialApp">
+	<md-toolbar>
+		<h1 class="red">Angular Material Starter</h1>
+	</md-toolbar>
+
+	<div class="container">
+		<md-sidenav class="md-whiteframe-2dp" md-is-locked-open="true">
+			<md-list>
+				<md-list-item>
+					<md-button>
+						<md-icon md-svg-src="svg/avatar1.svg"></md-icon>
+						Ted Roosevelt
+					</md-button>
+				</md-list-item>
+				<md-list-item>
+					<md-button>
+						<md-icon md-svg-src="svg/avatar1.svg"></md-icon>
+						Jon Jones
+					</md-button>
+				</md-list-item>
+				<md-list-item>
+					<md-button>
+						<md-icon md-svg-src="svg/avatar1.svg"></md-icon>
+						Demetrius Johnson
+					</md-button>
+				</md-list-item>
+			</md-list>
+		</md-sidenav>
+		<md-content class="lightgreen" id="content">
+			<h2>
+				<md-icon md-svg-src="svg/avatar1.svg"></md-icon>Ted Roosevelt
+			</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptates consequatur vero deserunt unde
+				eaque excepturi placeat, repellendus iure eum maxime, quas sit ullam blanditiis odit veniam adipisci
+				cupiditate a?</p>
+		</md-content>
+	</div>
+
+	<script src="js/users.js"></script>
+	<script src="js/UserService.js"></script>
+	<script src="js/UserController.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>
